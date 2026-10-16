@@ -27,7 +27,7 @@ python3 evidence.py "Rosa Acle"              # raw evidence for a human check
 It is read-only and uses the public APIs with an identifying User-Agent. It runs at about 1 article every 1.5 s, and honours `Retry-After` on HTTP 429.
 
 ## Known limits
-- English only so far. The original request was for the **Hungarian** Wikipedia, which needs its own date grammar.
+- **Hungarian** (the original request): the lead (« 1924. január 7. »), Wikidata and categories (« 1990-ben elhunyt személyek ») are supported with `--lang hu`. The huwiki infobox templates are not parsed yet.
 - The lead is parsed from the first parenthesis, and free-text infobox dates (not templates) are not read yet.
 
 ## Who made this
